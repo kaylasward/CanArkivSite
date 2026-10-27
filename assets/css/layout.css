@@ -1,0 +1,43 @@
+/* Shared navigation, buttons, footer and small UI components. */
+.site-header { position: relative; z-index: 5; border-bottom: 1px solid var(--line); }
+.header-inner { height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.brand:hover { color: var(--ink); }
+.brand-symbol { display: inline-flex; width: 43px; height: 43px; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; align-items: center; justify-content: center; }
+.brand-symbol img { width: 34px; height: 34px; }
+.brand-name { font-size: 1.38rem; letter-spacing: -.065em; font-weight: 790; }
+.header-actions { display: flex; align-items: center; gap: 25px; }
+.nav-links { display: flex; align-items: center; gap: 27px; }
+.nav-links a { font-size: .9rem; color: var(--muted); text-decoration: none; font-weight: 640; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent); }
+.theme-switch { display: inline-flex; height: 38px; width: 38px; align-items: center; justify-content: center; background: var(--surface); border: 1px solid var(--line); border-radius: 50%; color: var(--ink); }
+.theme-switch:hover { border-color: var(--accent); }
+.theme-switch svg { width: 19px; height: 19px; }
+.theme-switch .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-switch .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-switch .icon-moon { display: block; }
+.menu-toggle { display: none; border: 0; color: var(--ink); background: transparent; padding: 8px; }
+.menu-toggle svg { width: 22px; height: 22px; }
+.button { min-height: 50px; padding: 14px 22px; border-radius: 9px; border: 1px solid transparent; display: inline-flex; align-items: center; justify-content: center; gap: 9px; font-weight: 710; text-decoration: none; transition: background .18s, border-color .18s; }
+.button:hover { text-decoration: none; }
+.button-primary { background: var(--accent); color: var(--accent-on); }
+.button-primary:hover { background: var(--ink); color: var(--page); }
+.button-secondary { color: var(--ink); background: var(--surface); border-color: var(--line); }
+.button-secondary:hover { color: var(--accent); border-color: var(--accent); }
+.status-pill { display: inline-flex; gap: 8px; align-items: center; border: 1px solid var(--line); background: var(--surface); border-radius: 40px; color: var(--muted); padding: 8px 12px; font-size: .76rem; font-weight: 700; }
+.status-pill::before { content: ""; height: 7px; width: 7px; background: var(--accent); border-radius: 50%; }
+.site-footer { padding: 30px 0 45px; border-top: 1px solid var(--line); }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.footer-left { color: var(--muted); font-size: .82rem; display: flex; gap: 13px; align-items: center; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 24px; }
+.footer-links a { text-decoration: none; color: var(--muted); font-size: .82rem; font-weight: 650; }
+.footer-links a:hover { color: var(--accent); }
+@media (max-width: 710px) {
+ .header-inner { height: 76px; }
+ .menu-toggle { display: block; }
+ .header-actions { gap: 10px; }
+ .nav-links { display: none; position: absolute; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); left: 18px; right: 18px; top: 70px; padding: 18px; flex-direction: column; align-items: stretch; gap: 0; }
+ .nav-links[data-open="true"] { display: flex; }
+ .nav-links a { padding: 12px; font-size: 1rem; }
+ .footer-inner { flex-direction: column; align-items: flex-start; gap: 18px; }
+}

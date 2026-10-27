@@ -1,0 +1,53 @@
+/* Shared design tokens: based on CanArkiv's React Native light/dark palette. */
+:root {
+  color-scheme: light;
+  --page: #F6F7F4;
+  --surface: #FFFFFF;
+  --surface-muted: #EDF1EE;
+  --surface-dark: #202A28;
+  --ink: #202A28;
+  --muted: #586660;
+  --line: #DCE3DF;
+  --accent: #0B6E75;
+  --accent-on: #FFFFFF;
+  --accent-soft: #E3F3F1;
+  --want: #875900;
+  --want-soft: #FFF1D5;
+  --shadow: 0 14px 48px rgba(28, 56, 52, .065);
+  --radius: 20px;
+  --width: 1120px;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #11171A;
+  --surface: #1D272B;
+  --surface-muted: #2B373A;
+  --surface-dark: #E3F3F1;
+  --ink: #F4F6F3;
+  --muted: #B9C6C1;
+  --line: #3D4A4C;
+  --accent: #6EE0D2;
+  --accent-on: #102223;
+  --accent-soft: #183B3A;
+  --want: #F1BE5B;
+  --want-soft: #443722;
+  --shadow: 0 16px 40px rgba(0, 0, 0, .18);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #11171A;
+    --surface: #1D272B;
+    --surface-muted: #2B373A;
+    --surface-dark: #E3F3F1;
+    --ink: #F4F6F3;
+    --muted: #B9C6C1;
+    --line: #3D4A4C;
+    --accent: #6EE0D2;
+    --accent-on: #102223;
+    --accent-soft: #183B3A;
+    --want: #F1BE5B;
+    --want-soft: #443722;
+    --shadow: 0 16px 40px rgba(0, 0, 0, .18);
+  }
+}
