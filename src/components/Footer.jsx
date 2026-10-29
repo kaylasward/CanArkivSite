@@ -7,16 +7,13 @@ export default function Footer({ legal = false }) {
                 <span>
                     © <span data-year>2026</span> CanArkiv
                 </span>
-                {legal ? (
-                    <nav aria-label="Legal and support">
-                        <a href="/privacy-policy/">Privacy</a>
-                        <a href="/contribution-terms/">Terms</a>
-                        <a href="/community-guidelines/">Guidelines</a>
-                        <a href="/support/">Support</a>
-                    </nav>
-                ) : (
-                    <a href="/support/">Help &amp; Account</a>
-                )}
+
+                <nav aria-label="Footer navigation">
+                    <a href="/support/">Help & Account</a>
+                    <a href="/privacy-policy/">Privacy</a>
+                    <a href="/contribution-terms/">Terms</a>
+                    <a href="/community-guidelines/">Guidelines</a>
+                </nav>
             </div>
         </footer>
     );
