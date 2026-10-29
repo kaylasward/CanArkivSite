@@ -56,7 +56,7 @@ export default function Home() {
                                     </div>
                                     <div className="preview-toolbar">
                                         <span className="preview-filter">
-                                            Sort: Name ▾
+                                            Sort: A–Z ▾
                                         </span>
                                         <span className="preview-filter">
                                             Status: All ▾
@@ -279,8 +279,9 @@ export default function Home() {
                                 <p>
                                     Can't find what you're looking for? Add a
                                     missing drink, share a photo, or suggest a
-                                    correction in the app. Contributions are
-                                    reviewed before they appear publicly.
+                                    correction in the app. New catalog
+                                    submissions are reviewed before appearing
+                                    publicly.
                                 </p>
                             </div>
                         </div>

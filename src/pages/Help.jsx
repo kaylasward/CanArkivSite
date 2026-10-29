@@ -43,12 +43,14 @@ export default function Help() {
                                         save?
                                     </summary>
                                     <p>
-                                        Try searching by brand or flavor, or
-                                        scan the barcode. If the drink isn't
-                                        listed, you can submit it using the{" "}
+                                        Try searching by brand, flavor, or scan
+                                        the barcode. If the drink isn't listed,
+                                        you can submit it using the{" "}
                                         <strong>Add</strong> tab in the app.
-                                        You'll need to sign in, and new
-                                        submissions are reviewed.
+                                        You'll need to sign in and provide the
+                                        drink's brand, name, and a clear photo.
+                                        New submissions are reviewed before they
+                                        appear publicly.
                                     </p>
                                 </details>
                                 <details>
