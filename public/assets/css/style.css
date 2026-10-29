@@ -68,6 +68,7 @@ img,svg{display:block;max-width:100%}button{font:inherit;cursor:pointer}h1,h2,h3
 .copy-button{border:0;background:var(--accent);color:var(--accent-text);border-radius:12px;min-height:45px;padding:10px 17px;font-size:14px;font-weight:650}.copy-button:hover{filter:brightness(.94)}
 .copy-feedback{display:block;font-size:13px;color:var(--accent);margin-top:8px;min-height:20px}.discreet-note{font-size:13px!important;margin-top:12px!important}
 .help-section a:not(.text-action){color:var(--accent)}.steps{padding-left:24px}.steps li{padding-left:3px;margin-bottom:9px}.steps+.discreet-note{margin-top:20px!important}
+.legal-updated{font-size:13px!important;margin-top:20px!important}.legal-section p+p{margin-top:12px}.legal-footer nav{display:flex;gap:18px;flex-wrap:wrap}
 @media(max-width:960px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr);gap:34px}.hero h1{font-size:clamp(3.15rem,5vw,4rem)}.feature{padding:24px 20px}}
 @media(min-width:761px) and (max-width:900px){.hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:48px}.preview-shell{margin-inline:auto;width:min(100%,440px)}.hero h1{font-size:clamp(3.55rem,8vw,4.8rem)}}
 @media(max-width:760px){.container{width:min(var(--max),calc(100% - 36px))}.header-inner{min-height:72px}.brand{font-size:21px}.brand img{width:38px;height:38px}
