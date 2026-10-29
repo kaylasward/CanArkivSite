@@ -1,3 +1,5 @@
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 // Converted from the current support/index.html. Keep editing this as React JSX.
 export default function Help() {
     return (
@@ -5,50 +7,7 @@ export default function Help() {
             <a className="skip-link" href="#main">
                 Skip to content
             </a>
-            <header className="site-header">
-                <div className="container header-inner">
-                    <a className="brand" href="/" aria-label="CanArkiv home">
-                        <img
-                            src="/assets/brand/logo.png"
-                            alt=""
-                            width="42"
-                            height="42"
-                        />
-                        <span>CanArkiv</span>
-                    </a>
-                    <button
-                        className="theme-toggle"
-                        type="button"
-                        data-theme-toggle
-                        aria-label="Toggle light and dark theme"
-                        title="Toggle theme"
-                    >
-                        <svg
-                            className="icon-sun"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeWidth="1.8"
-                        >
-                            <circle cx="12" cy="12" r="4" />
-                            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4" />
-                        </svg>
-                        <svg
-                            className="icon-moon"
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeWidth="1.8"
-                        >
-                            <path d="M20.7 15.3A9 9 0 0 1 8.7 3.3a9 9 0 1 0 12 12Z" />
-                        </svg>
-                    </button>
-                </div>
-            </header>
+            <Header />
             <main id="main" className="help-main">
                 <section className="help-intro">
                     <div className="container narrow">
@@ -86,7 +45,7 @@ export default function Help() {
                                     <p>
                                         Try searching by brand or flavor, or
                                         scan the barcode. If the drink isn't
-                                        listed, you can submit it using the
+                                        listed, you can submit it using the{" "}
                                         <strong>Add</strong> tab in the app.
                                         You'll need to sign in, and new
                                         submissions are reviewed.
@@ -99,9 +58,9 @@ export default function Help() {
                                     </summary>
                                     <p>
                                         Open the drink in the app and tap the
-                                        three-dot menu. From there, choose
-                                        <strong>Add Photo</strong>,
-                                        <strong>Add or Edit Details</strong>, or
+                                        three-dot menu. From there, choose{" "}
+                                        <strong>Add Photo</strong>,{" "}
+                                        <strong>Add or Edit Details</strong>, or{" "}
                                         <strong>Suggest a Correction</strong>.
                                     </p>
                                 </details>
@@ -112,7 +71,7 @@ export default function Help() {
                                     <p>
                                         Community contributions are reviewed
                                         before they're shown publicly. You can
-                                        check their status under
+                                        check their status under{" "}
                                         <strong>Profile → Submissions</strong>.
                                     </p>
                                 </details>
@@ -125,10 +84,10 @@ export default function Help() {
                             <div>
                                 <h2>Account Settings</h2>
                                 <p>
-                                    In the app, open
+                                    In the app, open{" "}
                                     <strong>Profile → Settings</strong> to edit
                                     your profile or access account settings. To
-                                    delete your account, select
+                                    delete your account, select{" "}
                                     <strong>
                                         Account &amp; Security → Delete Account
                                     </strong>
@@ -178,16 +137,7 @@ export default function Help() {
                     </div>
                 </section>
             </main>
-            <footer className="site-footer">
-                <div className="container footer-inner">
-                    <span>
-                        © <span data-year>2026</span> CanArkiv
-                    </span>
-                    <a href="/support/">
-                        Help &amp; Account <span aria-hidden="true">↗</span>
-                    </a>
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 }

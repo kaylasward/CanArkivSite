@@ -26,13 +26,20 @@ Build with `npm run build` and test it using `npm run preview`.
 - Root directory: repository root
 
 Commit `package.json` and `package-lock.json` as well as `src/`, `public/`,
-`vite.config.js` and the three HTML entrypoints. `dist/` is generated and
+`vite.config.js` and the six HTML entrypoints. `dist/` is generated and
 is not committed. `_headers`, `reset-password/` and `.well-known/` are
 preserved under `public/`, so Vite copies them into the build output.
 
-The three HTML entrypoints preserve per-page title, description and metadata.
+The six HTML entrypoints preserve per-page title, description and metadata.
 The appearance switch and copy-address action are initialized after React
 mounts. The former HTML markup remains in `legacy-html/` as a reference.
+
+Before enabling app/universal links, replace the placeholders in
+`public/.well-known/*.example` with the real Apple Team ID and Android signing
+SHA-256 fingerprints, remove the `.example` suffixes, build, and verify both
+files are served directly over HTTPS. Do not deploy the placeholder files as
+live association files. Confirm that `support@canarkiv.com` is monitored before
+publishing the Support and deletion pages.
 
 ## Note
 
