@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import Home from "./pages/Home.jsx";
 import Help from "./pages/Help.jsx";
 import DeleteAccount from "./pages/DeleteAccount.jsx";
@@ -29,4 +29,9 @@ function App() {
     return <Home />;
 }
 
-createRoot(document.getElementById("root")).render(<App />);
+const root = document.getElementById("root");
+if (root.hasChildNodes()) {
+    hydrateRoot(root, <App />);
+} else {
+    createRoot(root).render(<App />);
+}

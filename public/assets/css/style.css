@@ -573,7 +573,8 @@ h3 {
     background: var(--page);
     overflow-wrap: anywhere;
 }
-.copy-button {
+.copy-button,
+.email-button {
     border: 0;
     background: var(--accent);
     color: var(--accent-text);
@@ -582,9 +583,12 @@ h3 {
     padding: 10px 17px;
     font-size: 14px;
     font-weight: 650;
+    text-decoration: none;
 }
-.copy-button:hover {
+.copy-button:hover,
+.email-button:hover {
     filter: brightness(0.94);
+    color: var(--accent-text);
 }
 .copy-feedback {
     display: block;
@@ -597,7 +601,7 @@ h3 {
     font-size: 13px !important;
     margin-top: 12px !important;
 }
-.help-section a:not(.text-action) {
+.help-section a:not(.text-action):not(.email-button) {
     color: var(--accent);
 }
 .steps {

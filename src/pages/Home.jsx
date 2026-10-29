@@ -279,8 +279,8 @@ export default function Home() {
                                 <p>
                                     Can't find what you're looking for? Add a
                                     missing drink, share a photo, or suggest a
-                                    correction in the app. New catalog
-                                    submissions are reviewed before appearing
+                                    correction in the app. New drink and photo
+                                    submissions are moderated before appearing
                                     publicly.
                                 </p>
                             </div>

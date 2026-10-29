@@ -49,8 +49,8 @@ export default function Help() {
                                         <strong>Add</strong> tab in the app.
                                         You'll need to sign in and provide the
                                         drink's brand, name, and a clear photo.
-                                        New submissions are reviewed before they
-                                        appear publicly.
+                                        New drink submissions are moderated
+                                        before they appear publicly.
                                     </p>
                                 </details>
                                 <details>
@@ -71,9 +71,13 @@ export default function Help() {
                                         Why isn't my submission visible yet?
                                     </summary>
                                     <p>
-                                        Community contributions are reviewed
-                                        before they're shown publicly. You can
-                                        check their status under{" "}
+                                        New drink and photo submissions are
+                                        moderated before they're shown publicly.
+                                        Written reviews may appear immediately
+                                        and can be reported and removed if they
+                                        break the Community Guidelines. You can
+                                        check drink and photo submission status
+                                        under{" "}
                                         <strong>Profile → Submissions</strong>.
                                     </p>
                                 </details>
@@ -124,6 +128,12 @@ export default function Help() {
                                 >
                                     Copy address
                                 </button>
+                                <a
+                                    className="email-button"
+                                    href="mailto:support@canarkiv.com?subject=CanArkiv%20support%20request"
+                                >
+                                    Email Support
+                                </a>
                             </div>
                             <span
                                 className="copy-feedback"
@@ -131,9 +141,9 @@ export default function Help() {
                                 aria-live="polite"
                             ></span>
                             <p className="discreet-note">
-                                Copy the address and paste it into your email
-                                app. Never include passwords, verification
-                                codes, or recovery links.
+                                Use the email link or copy the address. Never
+                                include passwords, verification codes, or
+                                recovery links.
                             </p>
                         </div>
                     </div>

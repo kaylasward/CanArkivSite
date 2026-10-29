@@ -7,7 +7,7 @@ export default function ContributionTerms() {
             introduction={["Photos, reviews, and product details from the community help build CanArkiv's energy drink archive. These terms explain what happens to the things you add."]}
             sections={[
                 { heading: "Your Photos and Reviews", paragraphs: [
-                    "You keep ownership of original photos and reviews you create. By submitting one, you allow CanArkiv to store, copy, display, and moderate it within CanArkiv. Approved photos and reviews are visible to everyone using CanArkiv.",
+                    "You keep ownership of original photos and reviews you create. By submitting one, you allow CanArkiv to store, copy, display, and moderate it within CanArkiv. Drink and photo submissions are moderated before they appear publicly. Written reviews may appear immediately and are subject to reporting and removal.",
                     "This does not give other people blanket permission to redistribute your work. Only submit material you created or have permission to share. CanArkiv may reject or remove a submission that breaks the Community Guidelines.",
                 ]},
                 { heading: "Product Facts", paragraphs: [

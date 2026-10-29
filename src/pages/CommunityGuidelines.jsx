@@ -13,10 +13,10 @@ export default function CommunityGuidelines() {
                 ]},
                 { heading: "Reports and Enforcement", paragraphs: [
                     "Use the in-app reporting options to flag content or users that violate these guidelines. You can also block contributors whose reviews or photos you do not want to see.",
-                    "Reported content may be reviewed and removed when it violates these guidelines.",
+                    "Written reviews may appear immediately without preapproval. Reviews and other reported content may be reviewed and removed when they violate these guidelines.",
                 ]},
                 { heading: "Your Responsibility", paragraphs: ["Share genuine experiences, provide accurate product details when possible, and only upload photos you have the right to use. By contributing to CanArkiv, you agree to follow these guidelines."] },
-                { heading: "Your Contributions", paragraphs: ["You keep ownership of your original photos and reviews. You allow CanArkiv to store, copy, display, and moderate them within CanArkiv. Approved photos and reviews are public. Basic product facts may stay in the catalog without a link to your account, even after account deletion. See the Contribution Terms for details."] },
+                { heading: "Your Contributions", paragraphs: ["You keep ownership of your original photos and reviews. You allow CanArkiv to store, copy, display, and moderate them within CanArkiv. Moderated photos and written reviews are public. Basic product facts may stay in the catalog without a link to your account, even after account deletion. See the Contribution Terms for details."] },
             ]}
         />
     );

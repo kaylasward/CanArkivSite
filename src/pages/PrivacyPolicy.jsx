@@ -16,9 +16,9 @@ export default function PrivacyPolicy() {
                     "If you ask for a place suggestion, the app uses foreground device location to suggest a country, region, or city. CanArkiv stores only the place details you choose to save with a review, not exact coordinates.",
                     "Production builds may send technical error information to Sentry when error reporting is configured. Default personal-information collection is disabled, and known passwords, tokens, and authorization values are redacted before reports are sent.",
                 ]},
-                { heading: "How We Use Information", paragraphs: ["CanArkiv uses this information to manage accounts, build and organize the catalog, save your drink lists, show approved photos and reviews, handle reports and moderation, prevent abuse, and fix technical problems."] },
+                { heading: "How We Use Information", paragraphs: ["CanArkiv uses this information to manage accounts, build and organize the catalog, save your drink lists, show moderated photos and community reviews, handle reports and moderation, prevent abuse, and fix technical problems."] },
                 { heading: "What Other People Can See", paragraphs: [
-                    "Approved product details and drink photos are visible to everyone using CanArkiv. Reviews, ratings, display names, approved review photos, and any place details you add to a review are public too.",
+                    "Moderated product details and drink photos are visible to everyone using CanArkiv. Written reviews may appear immediately. Reviews, ratings, display names, moderated review photos, and any place details you add to a review are public and may be reported and removed if they break the Community Guidelines.",
                     "Pending photos are limited to their uploader and moderators. Email addresses, authentication details, exact device coordinates, personal drink lists, reports, and blocked-account lists are not public profile information.",
                 ]},
                 { heading: "Service Providers", paragraphs: [
@@ -34,6 +34,7 @@ export default function PrivacyPolicy() {
                     "You can delete your account from Settings → Account & Security. This deletes your profile, ratings, reviews, personal drink lists, reports, blocks, and uploaded photos. Basic product facts and barcodes you contributed may remain in the catalog without identifying you as the contributor.",
                 ]},
                 { heading: "Your Choices", paragraphs: ["You can edit or delete your reviews in the app, remove review photos and optional location details, deny location access, or delete your account. Use Support for questions or for help with a deletion you cannot complete in the app."] },
+                { heading: "Privacy Contact", paragraphs: [<>For privacy questions or requests, email <a href="mailto:support@canarkiv.com?subject=CanArkiv%20privacy%20question">support@canarkiv.com</a>. Do not include a password, verification code, or recovery link.</>] },
             ]}
         />
     );

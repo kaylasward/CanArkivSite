@@ -19,7 +19,7 @@ export default function LegalPage({ introduction, sections, title }) {
                         {sections.map((section) => (
                             <section className="help-section legal-section" key={section.heading}>
                                 <h2>{section.heading}</h2>
-                                {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                                {section.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
                             </section>
                         ))}
                     </div>

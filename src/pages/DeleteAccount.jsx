@@ -77,8 +77,14 @@ export default function DeleteAccount() {
                                     className="copy-button"
                                     data-copy="support@canarkiv.com"
                                 >
-                                    Copy address
+                                    Copy Address
                                 </button>
+                                <a
+                                    className="email-button"
+                                    href="mailto:support@canarkiv.com?subject=CanArkiv%20account%20deletion%20request"
+                                >
+                                    Email Deletion Request
+                                </a>
                             </div>
                             <span
                                 className="copy-feedback"
