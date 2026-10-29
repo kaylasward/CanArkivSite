@@ -126,7 +126,7 @@ export default function Help() {
                                     className="copy-button"
                                     data-copy="support@canarkiv.com"
                                 >
-                                    Copy address
+                                    Copy Address
                                 </button>
                                 <a
                                     className="email-button"
