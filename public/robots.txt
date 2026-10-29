@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /reset-password
+Sitemap: https://canarkiv.com/sitemap.xml

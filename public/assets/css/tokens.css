@@ -1,0 +1,24 @@
+/* Exact light/dark palette used by the CanArkiv React Native app (Oct 2026). */
+:root {
+  color-scheme:light;
+  --page:#F6F7F4; --card:#FFFFFF; --tile:#EDF1EE;
+  --text:#202A28; --muted:#586660; --border:#DCE3DF;
+  --accent:#0B6E75; --accent-text:#FFFFFF; --accent-soft:#E3F3F1;
+  --tried:#0B6E75; --tried-soft:#E3F3F1;
+  --want:#875900; --want-soft:#FFF1D5; --rating:#875900;
+  --shadow:0 28px 70px rgba(25,55,51,.085);
+  --max:1140px;
+}
+:root[data-theme="dark"] {
+  color-scheme:dark;
+  --page:#11171A; --card:#1D272B; --tile:#2B373A;
+  --text:#F4F6F3; --muted:#B9C6C1; --border:#3D4A4C;
+  --accent:#6EE0D2; --accent-text:#102223; --accent-soft:#183B3A;
+  --tried:#6EE0D2; --tried-soft:#193E3B;
+  --want:#F1BE5B; --want-soft:#443722; --rating:#F1BE5B;
+  --shadow:0 28px 70px rgba(0,0,0,.24);
+}
+
+/* Gentle grouped-section surfaces; do not alter app component palette. */
+:root { --section:#EAF0EC; --contribute:#DBE9E3; --beta:#0D5458; }
+:root[data-theme="dark"] { --section:#182328; --contribute:#263A3B; --beta:#123F43; }
