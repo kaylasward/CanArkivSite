@@ -1,26 +1,25 @@
-# CanArkiv website — minimal homepage concept (v4)
+# CanArkiv Website — Version 5 (local preview fix)
 
-Static Cloudflare Pages website for CanArkiv. No frontend framework or build step.
+Static Cloudflare Pages site with no build tooling, dependencies or external fonts. Uses the actual uploaded CanArkiv logo, the app’s exact drink placeholder SVG and the app's light/dark palette. The interactive screenshot-style hero is an illustrative reproduction with sample drink labels; it is not a live catalog.
 
-## Layout
+## Contents
 
-- `index.html` — homepage structure and copy
-- `assets/css/tokens.css` — colors and light/dark tokens based on the mobile app
-- `assets/css/global.css` — type, basic resets, containers
-- `assets/css/layout.css` — navigation, buttons, footer
-- `assets/css/home.css` — new minimal homepage and example card
-- `assets/css/info-pages.css` — support and account deletion page styles
-- `assets/js/site.js` — theme toggle and mobile nav
-- `assets/brand/` — site icons and a draft archive mark
-- `assets/images/social-card.png` — social preview
-- `reset-password/` — original password-reset fallback, preserved
-- `.well-known/` — existing UNPUBLISHED `.example` app-association templates, preserved
-- `_headers` — original headers, preserved
-- `support/`, `delete-account/` — supporting pages
+- `index.html`: minimal landing page + simulated Explore screen, 3 features, help build the archive row, beta-status band
+- `support/index.html`: centralized Help & account hub, FAQ and copyable support address (no mailto action)
+- `delete-account/index.html`: direct external deletion request instructions, important for Google Play compliance
+- `reset-password/index.html`: preserved password-reset fallback
+- `_headers`, `.well-known/*.example`: preserved deployment security and app-link examples. `.example` files are **not** production association files.
+- `assets/css/tokens.css`: app-matched theme + two page-section grouping colors
+- `assets/css/style.css`: layout, app preview, features, beta band, responsive/help styles
+- `assets/js/site.js`: appearance control, copyright year, support email copy button
 
-All HTML asset links are relative, so `index.html` can be opened locally.
-Deploy by copying the complete folder contents to your connected Cloudflare Pages repo.
+## Deploy
 
-The homepage sample record is deliberately illustrative, not a real screenshot or real drink listing. No real app downloads are linked until published.
+Extract ZIP to your local `CanArkivSite` folder, replacing existing site files; keep any other custom files you rely on, especially any live `.well-known` association files. The ZIP has top-level site files, not an extra wrapper directory. Commit and push to your connected Cloudflare Pages repository. Site-internal links and asset paths are relative. You can open `index.html` directly from the extracted folder for a local preview, or preview over HTTP (`python3 -m http.server 8000`). **Extract all files together and keep the `assets/` directory beside `index.html`**; opening an HTML file alone will not load styles or graphics.
 
-**Before app store release:** add a reviewed privacy policy and terms/community rules as appropriate, and verify actual support and deletion workflows. This version does not invent legal policy text.
+## Notes before store submission
+
+- Google Play requires a deletion web resource even when account deletion is in the app. Keep `/delete-account/` live, and **verify** real deletion requests actually reach and are processed by `support@canarkiv.com`; the site does not implement a deletion backend. The copy-to-clipboard action does not submit anything.
+- Do not replace existing live privacy-policy URLs or app-link routes unintentionally when deploying. If your app advertises a Privacy Policy URL, that public page must exist and accurately reflect the released app. This ZIP does not invent a legal policy.
+- The beta section intentionally has no fake signup, app-store download, or ETA. Update its text when your release status changes.
+- UI matches the app theme and core card geometry, not a pixel-perfect native screen clone.
