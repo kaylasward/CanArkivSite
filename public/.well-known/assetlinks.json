@@ -1,13 +1,11 @@
 [
     {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
+        "relation": ["delegate_permission/common.handle_all_urls"],
         "target": {
             "namespace": "android_app",
             "package_name": "com.kaylasward.canarkiv",
             "sha256_cert_fingerprints": [
-                "ANDROID_SIGNING_SHA256"
+                "25:1F:76:BE:F7:7F:0F:67:B9:F9:9A:C9:D1:85:6A:68:B6:71:D1:34:3B:74:41:69:C2:F3:87:2E:A6:89:B6:01"
             ]
         }
     }
